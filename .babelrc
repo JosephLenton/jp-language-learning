@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    [
+      "@emotion/babel-preset-css-prop",
+      {
+        "sourceMap": true,
+        "autoLabel": true,
+        "labelFormat": "[filename]-[local]",
+      }
+    ]
+  ],
+
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-transform-runtime",
+  ],
+}

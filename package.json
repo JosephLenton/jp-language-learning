@@ -1,0 +1,27 @@
+{
+  "name": "jp-language-learning",
+  "version": "1.0.0",
+  "description": "JP Language Learning Tools",
+  "author": "Joseph Lenton",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "dependencies": {
+    "@emotion/core": "10.0.10",
+    "components": "^0.1.0",
+    "random-js": "^2.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/babel-preset-css-prop": "^10.0.9",
+    "parcel": "^1.12.3",
+    "typescript": "^3.4.5"
+  }
+}
