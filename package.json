@@ -5,6 +5,7 @@
   "author": "Joseph Lenton",
   "license": "MIT",
   "scripts": {
+    "build": "parcel build -d ./docs ./src/index.html",
     "start": "parcel ./src/index.html"
   },
   "dependencies": {
