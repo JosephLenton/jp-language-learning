@@ -5,6 +5,7 @@ import { css, Global } from '@emotion/core'
 import { column } from './../../css/layouts/column'
 import { fullSize } from './../../css/sizes/full-size'
 import { fonts } from './../../css/fonts'
+import { margins } from './../../css/variables/margins'
 
 export function Main() {
   return (
@@ -37,7 +38,8 @@ const globalStyle = css({
 
   body: {
     ...fonts.paragraph,
-    minHeight: '100vh',
+    minHeight: 'max(100vh, 320px)',
+    padding: margins.regular,
   },
 
   '#main': {

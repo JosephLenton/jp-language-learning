@@ -1,10 +1,13 @@
 
 import { px } from '/util/css'
 
+const SPACE_VALUE = 8
+
 export const spaces = {
-  quarter : px(2),
-  half : px(4),
-  one : px(8),
-  double : px(16),
-  triple : px(24),
+  quarter : px(SPACE_VALUE/4),
+  half : px(SPACE_VALUE/2),
+  one : px(SPACE_VALUE),
+  double : px(SPACE_VALUE*2),
+  triple : px(SPACE_VALUE*3),
+  five : px(SPACE_VALUE*5),
 }

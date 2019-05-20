@@ -2,7 +2,7 @@
 import {px} from '/util/css'
 
 export const family = {
-  openSans: `'Open Sans', sans-serif`,
+  notoSansJP: `'Noto Sans JP', sans-serif`,
 }
 
 export const weight = {

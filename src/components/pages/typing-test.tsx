@@ -4,7 +4,10 @@ import * as words from '../../words'
 import * as random from '../../util/random'
 import { Page } from '../page'
 import { Title } from '../core/title'
+import { TextInput } from '../core/text-input'
 import { ref } from '../../util/ref'
+import { row } from '../../css/layouts/row'
+import { margins } from '../../css/variables/margins'
 import { css } from '@emotion/core'
 
 export function TypingTest() {
@@ -15,16 +18,16 @@ export function TypingTest() {
   return <Page>
     <Title>Write the word</Title>
 
-    <p>{jpWord}</p>
+    <p css={style.jpWord}>{jpWord}</p>
 
     <div css={style.midDiv}>
-      <input type="text" ref={inputRef} autoFocus value={inputWord} onChange={ev => setInputWord(ev.target.value)}></input>
-      <button onClick={() => resetState()}>Next</button>
+      <TextInput ref={inputRef} autoFocus value={inputWord} onChange={value => setInputWord(value)} />
+      <button disabled={inputWord == ''} onClick={() => resetState()}>Next</button>
     </div>
 
     <div css={style.bottomDiv}>
-      <button onClick={() => resetState()}>skip</button>
-      <button onClick={() => resetState()}>answer</button>
+      <button onClick={() => resetState()}>Show answer</button>
+      <button onClick={() => resetState()}>Skip</button>
     </div>
   </Page>
 
@@ -43,11 +46,23 @@ function randomWord() {
 }
 
 const style = {
-  midDiv: css({
+  jpWord: css({
     width: '100%',
+    textAlign: 'center',
   }),
 
-  bottomDiv: css({
-    width: '100%',
-  }),
+  midDiv: css(
+    row,
+    {
+      alignItems: 'center',
+      marginBottom: margins.xLarge,
+    }
+  ),
+
+  bottomDiv: css(
+    row,
+    {
+      justifyContent: 'space-between',
+    }
+  ),
 }
