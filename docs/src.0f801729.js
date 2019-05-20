@@ -447,4 +447,4 @@ var r=arguments[3],e=require("process");function n(){throw new Error("secure ran
 },{"@emotion/core":"haMh","react":"1n8/","../pages/typing-test":"/X+g","./../../css/sizes/full-size":"0GNn","./../../css/fonts":"XRaU","./../../css/variables/margins":"rUxA"}],"zo2T":[function(require,module,exports) {
 "use strict";var e=require("@emotion/core"),r=function(e){if(e&&e.__esModule)return e;var r={};if(null!=e)for(var n in e)Object.hasOwnProperty.call(e,n)&&(r[n]=e[n]);return r.default=e,r};exports.__esModule=!0;var n=r(require("react")),t=r(require("react-dom")),o=require("./components/chrome/main");t.render((0,e.jsx)(o.Main,null),document.getElementById("main"));
 },{"@emotion/core":"haMh","react":"1n8/","react-dom":"NKHc","./components/chrome/main":"gCe+"}]},{},["zo2T"], null)
-//# sourceMappingURL=/src.0f801729.js.map
+//# sourceMappingURL=/jp-language-learning/src.0f801729.js.map
